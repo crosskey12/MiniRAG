@@ -100,7 +100,8 @@ def run_experiment(output_path):
         if row_count == 0:
             writer.writerow(headers)
 
-        for QUESTIONid in trange(row_count,len(QUESTION_LIST)):#
+        # for QUESTIONid in trange(row_count,len(QUESTION_LIST)):
+        for QUESTIONid in trange(row_count,20):
             QUESTION = QUESTION_LIST[QUESTIONid]
             Gold_Answer = GA_LIST[QUESTIONid]
             print()
