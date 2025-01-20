@@ -109,7 +109,7 @@ def run_experiment(output_path):
             print('Gold_Answer', Gold_Answer)
 
             try:
-                minirag_answer = rag.query(QUESTION, param=QueryParam(mode="mini")).replace("\n", "").replace("\r", "")
+                minirag_answer = rag.query(QUESTION, param=QueryParam(mode="light")).replace("\n", "").replace("\r", "")
                 print('Model_Answer', minirag_answer)
             except Exception as e:
                 print('Error in minirag_answer', e)
